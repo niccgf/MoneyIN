@@ -5,6 +5,17 @@
 	box-sizing: border-box;
 }
 
+#titulo-nombre {
+    display: block;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 30px;
+    color: #403866;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 49px;
+}
+
 body, html {
 	height: 100%;
 	font-family: 'Proxima Nova', sans-serif;

@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,600;1,100;1,200;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/xoa2gmd.css">
         <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="icon" href="resources/favicon.ico">
         <title>MoneyIN - Dinero fácil y rápido YA!</title>
     </head>
     <body>
@@ -16,18 +17,32 @@
         </div>
         <div class="container-contact100">
             <div class="wrap-contact100">
+                <div class="contact100-form validate-form" id="formNombre">
+                    <div class="wrap-input100 validate-input" id="wrapNombre" data-validate="¿Cuál es tu nombre?">
+                        <input class="inputNombre" name="nombre" id="inputNombre" placeholder="¿Cuál es tu nombre?">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="container-contact100-form-btn" id="guardarNombre">
+                        <button class="contact100-form-btn" value="guardarNombre" type="button">
+                            <span>
+                                Guardar Nombre
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                <br>
                 <form class="contact100-form validate-form">
                     <span class="contact100-form-title">
                         SIMULÁ TU PRÉSTAMO
                     </span>
-                    <div class="wrap-input100 validate-input" data-validate="¿Cuánto dinero querés?">
+                    <div class="wrap-input100 validate-input" id="formDinero" data-validate="¿Cuánto dinero querés?">
                         <input class="inputDinero" type="number" name="dinero" id="inputDinero" placeholder="¿Cuánto dinero querés?">
-                        <span class="focus-input100"></span>
+                        <span class="focus-input100" id="focusInputDinero"></span>
                     </div>
                     <span class="texto-1-light">Seleccioná 12, 18, 24 o 48 cuotas.</span>
                     <br>
                     <br>
-                    <div class="wrap-input100 validate-input" data-validate="¿En cuántas cuotas?">
+                    <div class="wrap-input100 validate-input" id="wrapCuotas" data-validate="¿En cuántas cuotas?">
                             <select class="input100" id="inputCuotas" name="cuotas">
                                 <option hidden selected value="null">¿En cuántas cuotas?</option>    
                                 <option value="12">12</option>
@@ -38,8 +53,8 @@
                     </div>
                     
     
-                    <div class="container-contact100-form-btn">
-                        <button class="contact100-form-btn" onclick="enviar()" value="guardar" type="button">
+                    <div class="container-contact100-form-btn" id="containerGuardar">
+                        <button class="contact100-form-btn" value="guardar" id="guardar" type="button">
                             <span>
                                 Enviar
                             </span>
